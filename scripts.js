@@ -1,6 +1,6 @@
 $(document).ready(function(e) {
   var position = 0;
-  $.getJSON("http://cors.io/?u=https://spreadsheets.google.com/feeds/list/1DhhtN-_VLQFE9MxaUyrMfHAiL4WrDEMTc17KGN9tAPQ/od6/public/values?alt=json", function(data) {
+  $.getJSON("https://cors.io/?u=https://spreadsheets.google.com/feeds/list/1DhhtN-_VLQFE9MxaUyrMfHAiL4WrDEMTc17KGN9tAPQ/od6/public/values?alt=json", function(data) {
     //first row "title" column
     console.log(data);
     var lastEntry = data.feed.entry.length - 1;

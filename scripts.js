@@ -1,4 +1,6 @@
 $(document).ready(function(e) {
+  var newBottom = $(window).height() - $('.clock-img').offset().top - $('.clock-img').height();
+  $('.clock-hand').css('bottom', newBottom+'px');
   var position = 0;
   $.getJSON("https://crossorigin.me/https://spreadsheets.google.com/feeds/list/1DhhtN-_VLQFE9MxaUyrMfHAiL4WrDEMTc17KGN9tAPQ/od6/public/values?alt=json", function(data) {
     //first row "title" column
